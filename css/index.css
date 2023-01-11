@@ -552,6 +552,7 @@ h1:hover {
 
 .footer {
     height: 300px;
+    width: 100%;
     margin-top: 50px;
     padding: 50px 0px;
     background-color: rgba(0, 60, 100, 0.6);
