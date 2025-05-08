@@ -1,0 +1,228 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(200, 200, 200);
+    background-attachment: fixed;
+    background-image: url(../images/background.jpg);
+    background-position: center -200px;
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* 双伪元素清除浮动 */
+
+.clearfix::after,
+.clearfix::before {
+    content: "";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+
+/*版心*/
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    position: fixed;
+    display: flex;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    background-position: center bottom;
+    background-size: cover;
+    padding: 5px 180px;
+    box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.3);
+}
+
+.header .logo {
+    height: 70px;
+    transition: all 0.5s;
+}
+
+h1 {
+    float: left;
+    left: 20%;
+    margin-left: -50px;
+}
+
+.live {
+    float: left;
+    left: 80%;
+    width: 140px;
+    height: 55px;
+    margin-top: 10px;
+    margin-left: -70px;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    background-color: rgba(200, 0, 0, 0.8);
+    color: rgba(255, 255, 255, 1);
+    cursor: default;
+    border-radius: 25px;
+    box-sizing: content-box;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.banner {
+    width: 1300px;
+    height: auto;
+    justify-content: center;
+    margin-top: 95px;
+    margin-left: -650px;
+    left: 50%;
+    background-color: rgb(255, 255, 255);
+    background-position: center bottom;
+    border-radius: 20px;
+    box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.3);
+    box-sizing: content-box;
+    position: fixed;
+}
+
+#video-container {
+    position: relative;
+    height: 740px;
+    width: 1300px;
+}
+
+video {
+    display: inline-block;
+    margin: 10px 10px;
+    height: 720px;
+    width: 1280px;
+    border-radius: 10px;
+    cursor: default;
+}
+
+#video-info {
+    width: 1280px;
+    height: 40px;
+    margin: 0px 10px 10px 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    /* border: 2px solid skyblue; */
+    /* box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.3);*/
+    box-sizing: content-box;
+}
+
+#video-info li {
+    float: left;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    background-color: rgb(55, 150, 200);
+    /*文本位置 */
+    font-size: 20px;
+    color: white;
+    line-height: 40px;
+    margin-right: 5px;
+    cursor: default;
+    /* 光标类型 */
+    transition: all 0.3s;
+}
+
+#video-info li:nth-child(1) {
+    border-radius: 10px 0px 0px 10px;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgb(55, 150, 200);
+    font-size: 25px;
+    font-weight: 600;
+    width: 150px;
+}
+
+#video-info li:nth-child(2) {
+    border-radius: 10px 0px 0px 10px;
+    width: 240px;
+}
+
+#video-info li:nth-child(3) {
+    width: 120px;
+}
+
+#video-info li:nth-child(4) {
+    width: 240px;
+    margin-right: 10px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+#video-info li:nth-child(5) {
+    border-radius: 10px 0px 0px 10px;
+    width: 200px;
+    background-color: rgb(241, 125, 181);
+}
+
+#video-info li:nth-child(6) {
+    width: 160px;
+    margin-right: 0px;
+    border-radius: 0px 10px 10px 0px;
+    background-color: rgb(241, 125, 181);
+}
+
+#video-info li:nth-child(7) {
+    width: 130px;
+    margin-right: 0px;
+    border-radius: 10px;
+    background-color: white
+}
+
+#quality-selector {
+    position: absolute;
+    bottom: 11px;
+    right: 10px;
+    z-index: 100;
+    border-radius: 10px;
+}
+
+#quality-dropdown {
+    width: 130px;
+    height: 42px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    background-color: rgba(200, 0, 0, 0.8);
+    color: white;
+    border: 2px solid rgb(255, 202, 202);
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#quality-dropdown:hover {
+    background: #555;
+    border-color: #777;
+}
+
+#quality-dropdown option {
+    background: #333;
+    padding: 5px;
+}
