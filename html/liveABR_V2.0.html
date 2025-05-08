@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>毕设</title>
+    <link rel="stylesheet" href="../css/live.css">
+    <link rel="shortcut icon" href="../Karrox-logo .ico" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/flv.js@latest/dist/flv.min.js"></script>
+    <script src="../javascript/liveABR_V2.0.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <h1>
+            <img src="../images/HITsz.png" alt="" class="logo">
+        </h1>
+        <div class="live">Live</div>
+    </div>
+    <div class="banner">
+        <div id="video-container">
+            <video id="videoElement" src="" controls="controls" muted autoplay></video>
+        </div>
+        <div id="video-info">
+            <ul>
+                <li>video-info:</li>
+                <li>Buffer Length: <span id="buffer-length">0</span> s</li>
+                <li>Stalls: <span id="stall-count">0</span></li>
+                <li>Stall Duration: <span id="stall-duration">0</span> s</li>
+                <li>Bitrate: <span id="current-bitrate">N/A</span> kbps</li>
+                <li>Quality: <span id="current-quality">N/A</span></li>
+                <li id="quality-selector">
+                    <select id="quality-dropdown" title="选择清晰度">
+                        <option value="auto">ABR</option>
+                        <option value="360">360P</option>
+                        <option value="540">540P</option>
+                        <option value="720">720P</option>
+                    </select>
+                </li>
+            </ul>
+
+        </div>
+
+</body>
+
+</html>
